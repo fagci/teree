@@ -63,21 +63,3 @@ class Teree():
 
     def __str__(self) -> str:
         return self.tree()
-
-
-def main():
-    o = [
-        1,
-        [2, 3],
-        [[4], 5],
-        6,
-        {
-            'test': 'passed',
-            'teree': Teree,
-        }
-    ]
-    print(Teree(o))
-
-
-if __name__ == "__main__":
-    main()
