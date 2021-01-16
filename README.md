@@ -1,5 +1,5 @@
 # teree
-Terminal tree -- package to print any objects as tree
+Terminal tree &mdash; package to print any objects as tree
 
 ## Usage
 
