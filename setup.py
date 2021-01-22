@@ -1,18 +1,25 @@
-from distutils.core import setup
+import os
+from setuptools import setup
+
+
+def read(fname):
+    return open(os.path.join(os.path.dirname(__file__), fname)).read()
+
+
 setup(
     name='teree',         # How you named your package folder (MyLib)
     packages=['teree'],   # Chose the same as "name"
-    version='0.1',      # Start with a small number and increase it with every change you make
+    version='0.1.1',      # Start with a small number and increase it with every change you make
     # Chose a license from here: https://help.github.com/articles/licensing-a-repository
     license='MIT',
     # Give a short description about your library
     description='Terminal tree -- package to print any objects as tree',
+    long_description=read('README.md'),
+    long_description_content_type='text/markdown',
     author='Mikhail Yudin',                   # Type in your name
     author_email='fagci.nsk@gmail.com',      # Type in your E-Mail
     # Provide either the link to your github or to your website
-    url='https://github.com/fagcindk/teree',
-    # I explain this later on
-    download_url='https://github.com/fagcindk/teree/archive/v_01.tar.gz',
+    url='https://github.com/fagcinsk/teree',
     # Keywords that define your package best
     keywords=['terminal', 'tree', 'any object'],
     classifiers=[
